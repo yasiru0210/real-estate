@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Details</title>
+    <link rel="stylesheet" href="stylesproject.css">
+</head>
+<body>
+    <!-- Header with title and menu bar -->
+    <header>
+        <h1>Project Details</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Project Details Section -->
+    <section id="project-details">
+        <h2 id="project-title">Project Title</h2>
+        <img id="project-image" src="" alt="Project Image">
+        <p id="project-description">Description of the project.</p>
+        
+        <!-- Google Map -->
+        <div id="map" style="height: 400px; width: 100%;"></div>
+    </section>
+
+    <script src="scripts.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+</body>
+</html>
