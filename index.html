@@ -3,35 +3,231 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ABC LAND</title>
+    <title>ABC Land - Premium Real Estate Development</title>
     <link rel="stylesheet" href="stylesindex.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <!-- Header with title and menu bar -->
-    <header>
-        <h1>ABC LAND PVT LTD</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+    <!-- Navigation Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-brand">
+                <h1 class="logo">ABC LAND</h1>
+                <span class="tagline">Premium Development</span>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About Us</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
     </header>
 
-    <!-- Photo Gallery -->
-    <section id="gallery">
-        <div class="gallery-item" onclick="navigateToProject(1)">
-            <img src="img/img1.jpg" alt="Land Project 1">
-            
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Discover Your Dream Land</h1>
+            <p class="hero-subtitle">Premium residential and commercial land developments in prime locations</p>
+            <div class="hero-cta">
+                <button class="btn btn-primary">Explore Projects</button>
+                <button class="btn btn-secondary">Contact Us</button>
+            </div>
         </div>
-        <div class="gallery-item" onclick="navigateToProject(2)">
-            <img src="img/img2.jpg" alt="Land Project 2">
-            
+        <div class="hero-scroll">
+            <i class="fas fa-chevron-down"></i>
         </div>
-        <!-- Add more gallery items as needed -->
     </section>
+
+    <!-- Featured Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Discover our premium land development projects in strategic locations</p>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card" onclick="navigateToProject(1)">
+                    <div class="project-image">
+                        <img src="img/img1.jpg" alt="Artigala Lush Life Project">
+                        <div class="project-overlay">
+                            <div class="project-badge">Premium</div>
+                            <button class="project-btn">
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">ARTIGALA - LUSH LIFE</h3>
+                        <p class="project-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Hanwella, Near Kaduwela
+                        </p>
+                        <p class="project-description">Tranquil living amidst lush greenery with modern amenities and excellent connectivity.</p>
+                        <div class="project-features">
+                            <span class="feature-tag">Residential</span>
+                            <span class="feature-tag">Eco-Friendly</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" onclick="navigateToProject(2)">
+                    <div class="project-image">
+                        <img src="img/img2.jpg" alt="Watareka Green Stream Project">
+                        <div class="project-overlay">
+                            <div class="project-badge">New Launch</div>
+                            <button class="project-btn">
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">WATAREKA - GREEN STREAM</h3>
+                        <p class="project-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Wataraka, Near Homagama
+                        </p>
+                        <p class="project-description">Strategic location with excellent connectivity to major transportation hubs and cities.</p>
+                        <div class="project-features">
+                            <span class="feature-tag">Commercial</span>
+                            <span class="feature-tag">Investment</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="features-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Why Choose ABC Land</h2>
+                <p class="section-subtitle">Your trusted partner in premium land development</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <h3>Prime Locations</h3>
+                    <p>Strategically selected locations with excellent connectivity and growth potential.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Legal Compliance</h3>
+                    <p>All projects are fully compliant with legal requirements and proper documentation.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Sustainable Development</h3>
+                    <p>Environmentally conscious development with focus on sustainability and green living.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Trusted Service</h3>
+                    <p>Years of experience in real estate development with satisfied customers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Get In Touch</h2>
+                    <p>Ready to invest in your future? Contact us today to learn more about our premium land projects.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+94 11 234 5678</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@abcland.lk</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Business District, Colombo 03</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Your Phone">
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>ABC LAND PVT LTD</h3>
+                    <p>Premium Real Estate Development</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ABC Land Pvt Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 
     <script src="scripts.js"></script>
 </body>
